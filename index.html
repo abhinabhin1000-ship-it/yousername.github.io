@@ -1,22 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Abhin S U</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     body {
-      font-family: Arial;
       margin: 0;
-      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fa;
     }
 
     header {
-      background-color: #1f3a5f;
+      background: #1f3a5f;
       color: white;
-      padding: 50px;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    header p {
+      margin: 10px 0;
+    }
+
+    .icons i {
+      margin: 10px;
+      font-size: 20px;
+      cursor: pointer;
     }
 
     nav {
-      background: #333;
+      background: #2c3e50;
+      text-align: center;
       padding: 10px;
     }
 
@@ -27,8 +53,32 @@
     }
 
     section {
-      padding: 50px;
+      padding: 60px 20px;
+      text-align: center;
     }
+
+    .profile-img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: -75px;
+      border: 5px solid white;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
   </style>
 </head>
 
@@ -36,7 +86,12 @@
 
 <header>
   <h1>Abhin S U</h1>
-  <p>AI/ML Engineer | Industrial Applications | Data Science</p>
+  <p>AI/ML Engineer | Industrial AI | Data Science</p>
+
+  <div class="icons">
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-github"></i></a>
+  </div>
 </header>
 
 <nav>
@@ -47,23 +102,33 @@
 </nav>
 
 <section id="about">
+  <img src="profile.jpg" class="profile-img">
   <h2>About Me</h2>
-  <p>I am an M.Tech student in Industrial Engineering with skills in AI/ML and Data Science.</p>
+  <p>I am an M.Tech student specializing in Industrial Engineering with strong skills in AI/ML and Data Science.</p>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-  <p>Fake Review Detection | Predictive Maintenance</p>
+  <div class="projects">
+    <div class="card">
+      <h3>Fake Review Detection</h3>
+      <p>ML model to detect fake reviews.</p>
+    </div>
+    <div class="card">
+      <h3>Predictive Maintenance</h3>
+      <p>AI system for industrial failure prediction.</p>
+    </div>
+  </div>
 </section>
 
 <section id="skills">
   <h2>Skills</h2>
-  <p>Python, Machine Learning, Deep Learning, Data Analysis</p>
+  <p>Python | Machine Learning | Deep Learning | Data Science</p>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>LinkedIn | GitHub</p>
+  <p>Email: yourmail@gmail.com</p>
 </section>
 
 </body>
